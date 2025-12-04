@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<title>AutoPlay</title>
+
+<style>
+    body {
+        background: #000;
+        margin: 0;
+        height: 100vh;
+    }
+</style>
+
+</head>
+<body>
+
+<audio id="player" src="music1.mp3"></audio>
+
+<script>
+    document.body.addEventListener("click", () => {
+        let audio = document.getElementById("player");
+        audio.volume = 1.0;      // максимум
+        audio.play();            // запуск
+    });
+</script>
+
+</body>
+</html>
